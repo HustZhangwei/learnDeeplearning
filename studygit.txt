@@ -59,5 +59,6 @@ $ git merge <name>
 $ git branch -d <name>
 分支合并图查看
 $ git log --graph
+分支策略2
 
 
