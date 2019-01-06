@@ -9,6 +9,8 @@ $ pwd
 $ git init
 添加文件
 $ git add studygit.txt
+添加一个文件夹
+$ git add 文件夹
 将文件提交到仓库
 $ git commit -m "wrote a readme file"
 实时检查仓库文件的情况，是否有修改未保存的文件
@@ -41,4 +43,21 @@ $ git push -u origin master
 $ git push -u origin master
 之后推送
 $ git push origin master
+克隆一个本地库
+$ git clone git@github.com:HustZhangwei/gitskills.git
+查看分支
+$ git branch
+创建分支
+$ git branch <name>
+切换分支
+$ git checkout <name>
+创建+切换分支
+$ git checkout -b <name>
+合并某分支到当前分支
+$ git merge <name>
+删除分支：
+$ git branch -d <name>
+分支合并图查看
+$ git log --graph
+
 
