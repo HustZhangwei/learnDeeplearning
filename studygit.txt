@@ -1,0 +1,11 @@
+本文档首先用于git的学习
+创建文件夹：
+$ mkdir learnDeeplearning
+打开文件夹
+$ cd learnDeeplearning
+显示文件路径
+$ pwd
+创建版本库
+$ git init
+添加文件
+$ git add studygit.txt
