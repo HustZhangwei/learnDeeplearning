@@ -59,6 +59,44 @@ $ git merge <name>
 $ git branch -d <name>
 分支合并图查看
 $ git log --graph
-分支策略2
-
-
+把当前工作现场“储藏”起来，等以后恢复现场后继续工作
+$ git stash
+查看工作区
+$ git stash list
+恢复工作区1+删除工作区内容
+$ git stash apply
+$ git stash drop
+恢复工作区2
+$ git stash pop
+丢弃一个没有被合并过的分支
+$ git branch -D <name>
+查看远程库的信息
+$ git remote
+查看远程库详细信息
+$ git remote -v
+推送分支，就是把该分支上的所有本地提交推送到远程库
+$ git push origin master
+设置dev和origin/dev的链接
+$ git branch --set-upstream-to=origin/dev dev
+先用git pull把最新的提交从origin/dev抓下来，然后，在本地合并，解决冲突，再推送
+$ git pull
+把分叉的提交历史“整理”成一条直线，看上去更直观
+$ git rebase
+创建标签
+$ git branch
+$ git checkout master
+$ git tag v1.0
+对特定版本打标签
+$ git tag v0 checkID
+查看所有标签
+$ git tag
+删除标签
+$ git tag -d v0.1
+推送某个标签到远程
+$ git push origin <tagname>
+一次性推送全部尚未推送到远程的本地标签
+$ git push origin --tags
+删除一个远程标签
+$ git push origin :refs/tags/<tagname>
+让Git显示颜色
+$ git config --global color.ui true
