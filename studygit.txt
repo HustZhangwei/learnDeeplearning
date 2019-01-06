@@ -25,4 +25,20 @@ $ git reset --hard HEAD^
 $ git reset --hard 版本号
 查看每一次命令
 $ git reflog
+查看工作区和版本库里面最新版本的区别
+$ git diff HEAD -- readme.txt
+丢弃工作区的修改
+$ git checkout -- readme.txt
+删除文件方法
+$ git rm test.txt
+$ git commit -m "remove test.txt"
+添加远程库-github
+$ git remote add origin git@github.com:HustZhangwei/learnDeeplearning.git
+将REARME.md拷贝到本地
+$ git pull --rebase origin master
+$ git push -u origin master
+第一次推送
+$ git push -u origin master
+之后推送
+$ git push origin master
 
