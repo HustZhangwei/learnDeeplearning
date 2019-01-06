@@ -14,4 +14,15 @@ $ git commit -m "wrote a readme file"
 实时检查仓库文件的情况，是否有修改未保存的文件
 $ git status
 检查上次的修改
-git diff
+$ git diff
+显示从最近到最远的提交日志
+$ git log
+简化版输出日志
+$ git log --pretty=oneline
+回退到上一版本
+$ git reset --hard HEAD^
+设置为任意版本
+$ git reset --hard 版本号
+查看每一次命令
+$ git reflog
+
