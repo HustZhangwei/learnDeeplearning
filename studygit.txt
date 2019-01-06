@@ -9,3 +9,5 @@ $ pwd
 $ git init
 添加文件
 $ git add studygit.txt
+将文件提交到仓库
+$ git commit -m "wrote a readme file"
